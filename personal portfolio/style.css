@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #5cafad;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+}
+
+.profile-info {
+    text-align: left;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0.5em 0;
+}
+
+h2 {
+    margin-top: 20px;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#about {
+    width: 100%; 
+    background-color: #fff; 
+    padding: 20px; 
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    margin-bottom: 20px;
+}
+
+.about-content {
+    padding: 10px; 
+}
+
+#education, #projects {
+    width: 45%; 
+}
+
+.education-list, .project-list {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+#resume {
+    width: 45%; 
+    text-align: left;
+    margin-top: 20px;
+}
+
+.resume-img {
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    color: #007BFF;
+}
+
+#contact {
+   // text-align: center;
+   margin-top: 20px;
+}

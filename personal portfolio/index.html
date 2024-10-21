@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Anirban Chowdhury - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <div class="header-content">
+            <img src="image/my.jpg" alt="Anirban Chowdhury" class="profile-img">
+            <div class="profile-info">
+                <h1>Anirban Chowdhury</h1>
+                <p>Software Developer | Web Developer | Full-Stack Developer</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <section id="education">
+            <h2>About</h2>
+            <div class="project-list">
+                <p>I am Anirban Chowdhury, a passionate software developer currently pursuing my Master’s in Computer Applications (MCA) at Siliguri Institute of Technology. With a solid foundation in programming languages such as Java, C++, and Python, I strive to create efficient and innovative solutions for real-world problems. My journey in technology has also led me to gain expertise in web development, where I enjoy building responsive and user-friendly applications. I thrive in collaborative environments and am always eager to learn and implement new technologies. Outside of coding, I enjoy mentoring younger students, helping them navigate the world of technology. I am excited to contribute my skills to meaningful projects and continue growing in the ever-evolving tech landscape.</p>
+                </div>
+            <h2>Education</h2>
+            <div class="education-list">
+                <div class="education-item">
+                    <p>Currently pursuing MCA at Siliguri Institute of Technology</p>
+                </div>
+                <div class="education-item">
+                    <p>Graduated from Raiganj University</p>
+                </div>
+                <div class="education-item">
+                    <p>Higher Secondary Education at Kaliyaganj Parbati Sundari High School</p>
+                </div>
+                <div class="education-item">
+                    <p>Secondary Education at Kaliyaganj Parbati Sundari High School</p>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-list">
+                <div class="project">
+                    <h3>E-FARMER Project</h3>
+                    <p>A web application designed to help farmers access real-time data and resources.</p>
+                </div>
+                <div class="project">
+                    <h3>WeatherApp</h3>
+                    <p>A full-stack application that provides live weather updates.</p>
+                    <h3>E-BookStall</h3>
+                    <p>A full stack Application that provide online book service</P>
+                    <h3>Tic-Tac-Toe Game</h3>
+                    <p>Create a game using c++</P>
+                    <h3>Number Gussing Game</h3>
+                    <p>Create a game using c++</P>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="container">
+
+        <section id="resume">
+            <h2>Resume</h2>
+            <p>You can view my resume: <strong><a id="resume-link" href="image/resume.pdf" target="_blank">resume.pdf</a></strong></p>
+            
+            
+            
+            <p><a href="image/resume.pdf" id="resume-download" download="resume.pdf" class="download-link">Download Resume <span class="arrow">&#8595;</span></a></p>
+        </section>
+
+        
+        <section id="contact">
+            <h2>Contact Information</h2>
+            <p>Address: Kaliyaganj,College Para, Uttar Dinajpur, West Bengal, India , 733129</p>
+            <p>Email: <a href="mailto:anirbanchowdhury122@gmail.com">anirbanchowdhury122@gmail.com</a></p>
+           
+            
+            
+        </section>
+    </div>
+
+    <script>
+        
+        document.getElementById('resume-link').onclick = function(event) {
+            event.preventDefault(); 
+            const pdfUrl = 'image/resume.pdf';
+            const jpgUrl = 'image/resume.jpg';
+
+            
+            fetch(pdfUrl)
+                .then(response => {
+                    if (response.ok) {
+                        window.open(pdfUrl, '_blank');
+                    } else {
+                        
+                        window.open(jpgUrl, '_blank'); 
+                    }
+                })
+                .catch(() => {
+                    
+                    window.open(jpgUrl, '_blank'); 
+                });
+        };
+    </script>
+</body>
+</html>
